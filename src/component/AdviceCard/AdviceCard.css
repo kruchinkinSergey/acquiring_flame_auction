@@ -1,0 +1,16 @@
+.advice__container{
+    background-color: #232323;
+    border-radius: 0 30px 0 30px;
+    display: flex;
+    align-items: center;
+    padding: 17px;
+}
+.avice_number{
+    margin: 0;
+}
+.avice_text{
+    font-size: 18px;
+    line-height: 16px;
+    font-weight: 300;
+    margin: 0;
+}

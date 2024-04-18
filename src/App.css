@@ -1,0 +1,106 @@
+.payment__container{
+    min-width: 830px;
+    background-color: #1B1B1B;
+    padding: 41px 41px 52px 41px;
+}
+.payment__title{
+    font-size: 27px;
+    line-height: 33px;
+    color: #fff;
+    margin: 0 0 33px;
+}
+.payButton__container{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    gap: 25px;
+}
+.overlay {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: rgba(0, 0, 0, 1);
+    transition: 0.5s;
+    overflow-x: hidden;
+  }
+.overlay__container{
+    max-width: 575px;
+    margin: 20vh auto 0;
+}
+.advice__inner{
+    display: flex;
+    gap: 35px;
+    margin-bottom: 40px;
+}
+.card{
+    background-color: #1B1B1B;
+    border-radius: 23px;
+    padding: 30px 40px 40px;
+    margin-bottom: 25px;
+}
+.card__img{
+    margin-bottom: 53px;
+}
+.card__text{
+    color: #BBBBBB;
+    font-size: 16px;
+    font-weight: 300;
+}
+.number__container{
+    display: flex;
+    gap: 11px;
+    align-items: center;
+}
+.card__number{
+    font-size: 18px;
+    font-weight: 500;
+}
+.copy__btn{
+    border: none;
+    background-color: transparent;
+    padding: 0;
+    margin: 0;
+}
+.taimer{
+    display: flex;
+    justify-content: space-between;
+    padding: 14px 18px;
+    background-color: #232323;
+    border-radius: 6px;
+    margin-bottom: 65px;
+}
+.taimer__text{
+    color: #BBBBBB;
+    font-size: 16px;
+    font-weight: 300;
+}
+.taimer__time-container{
+    display: flex;
+}
+.btn__inner{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 29px;
+}
+.ready__btn{
+    border: none;
+    background: linear-gradient(90deg, #FF6E1C 0%, #EF9814 100%);
+    color: #fff;
+    font-size: 22px;
+    font-weight: 400;
+    padding: 9px 145px;
+    border-radius: 17px;
+}
+.cancel__btn{
+    color: #9C9C9C;
+    text-decoration: underline;
+    background-color: transparent;
+    border: none;
+    font-size: 22px;
+    font-weight: 300;
+}
