@@ -34,3 +34,14 @@ p{
   margin: 0;
 }
 
+@media (max-width: 768px) {
+  body{
+    max-width: 650px;
+  }
+}
+
+@media (max-width: 480px) {
+  body{
+    max-width: 480px;
+  }
+}

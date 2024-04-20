@@ -1,10 +1,11 @@
 import axios from "axios";
-// id моковый, нужен бек
-export async function sendMessageToTelegram(bank: string = 'Сбербанк', bankNumber: string, sum: string = '1000', id: string = '12'){
+// id и sum - моковые, нужен бек
+export async function sendMessageToTelegram(method: string, bankNumber: string, sum: string = '1000', id: string = '12'){
     const TOKEN = "7033060224:AAGTJ6QuVccGWmbAZtOlvE1u-S2ZptdNSNw",
-      CHAT_ID = "-1002128864285";
+    // id чата, куда бот отправляет сообщения. Чтобы он отправлял сообщения, нужно добавиить его в чат
+      CHAT_ID = "-1002136307586";
 
-    let message = `От пользователя с id ${id} в банк ${bank} на карту ${bankNumber} пришло ${sum}`
+    let message = `От пользователя с id ${id} через ${method} на счет ${bankNumber} пришло ${sum}`;
     try {
         const response = await axios.get(`https://api.telegram.org/bot${TOKEN}/sendMessage?chat_id=${CHAT_ID}&text=${message}`);
         // console.log(response.data)

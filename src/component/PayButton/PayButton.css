@@ -17,3 +17,16 @@
     margin: 0;
     font-weight: 500;
 }
+
+@media (max-width: 768px){
+    .btn{
+        padding: 16px;
+    }
+    .btn__img{
+        width: 100px;
+    }
+    .btn__text{
+        font-size: 12px;
+        line-height: 14px;
+    }
+}

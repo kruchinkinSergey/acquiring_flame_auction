@@ -1,14 +1,16 @@
 import './AdviceCard.css';
+import num from '../../assets/AdviceCard_num.png'
+//  фото для наглядности 
 interface AdviceCardProps {
     num: string;
     text: string;
 }
  
-const AdviceCard = ({num, text}: AdviceCardProps) => {
+const AdviceCard = ({ text }: AdviceCardProps) => {
     let textArr: string[] = text.split(' ')
     return ( 
         <div className="advice__container">
-            <p className="avice_number">{num}</p>
+            <img src={num} className="avice_number" />
             <p className="avice_text">{textArr[0]}<br/>{textArr[1]}</p>
         </div>
      );
